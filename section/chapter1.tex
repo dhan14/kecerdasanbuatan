@@ -1,8 +1,5 @@
 \chapter{Mengenal Kecerdasan Buatan dan Scikit-Learn}
-Buku umum teori lengkap yang digunakan memiliki judul\textit{Artificial intelligence: a modern approach}\cite{russell2016artificial}.  
-Untuk pratikum sebelum UTS menggunakan buku \textit{Python Artificial Intelligence Projects for Beginners}\cite{eckroth2018python}. Buku pelengkap penunjang penggunaan python menggunakan buku \textit{Python code for Artificial Intelligence: Foundations of Computational Agents}\cite{poole2017python}.
-Dengan praktek menggunakan python 3 dan editor anaconda dan library python scikit-learn.
-Tujuan pembelajaran pada pertemuan pertama antara lain:
+
 \begin{enumerate}
 \item
 Mengerti definisi kecerdasan buatan, sejarah kecerdasan buatan, perkembangan dan penggunaan di perusahaan
@@ -14,20 +11,33 @@ Memahami cara penggunaan variabel explorer di spyder
 Tugas dengan cara dikumpulkan dengan pull request ke github dengan menggunakan latex pada repo yang dibuat oleh asisten riset.
 
 \section{Teori}
-Praktek teori penunjang yang dikerjakan :
-\begin{enumerate}
-\item
-Buat Resume Definisi, Sejarah dan perkembangan Kecerdasan Buatan, dengan bahasa yang mudah dipahami dan dimengerti. Buatan sendiri bebas plagiat[hari ke 1](10)
-\item
-Buat Resume mengenai definisi supervised learning, klasifikasi, regresi dan unsupervised learning. Data set, training set dan testing set.[hari ke 1](10)
-\end{enumerate}
+
+Kecerdasan Buatan merupakan sebuah rekayasa kecerdasan yang diterapkan ke dalam komputer, diprogram dengan tujuan berfikir dan meniru tindakan manusia \cite{jmcai}. Di dalam kecerdasan buatan terdapat proses pengumpulan informasi, penalaran dan koreksi untuk mencapai hasil yang diharapkan.\cite{jfai}
+\\
+\\
+\subsection{Sejarah}
+Pada tahun 1943 hingga 1955 menjadi sebuah cikal bakal kecerdasan buatan lahir. Warren Mc Culloch dan Walter Pitts mengusulkan model neuron buatan yang dimana setiap neuron diindikasikan sebagai “hidup” atau “mati”, dengan sakelar “hidup” terjadilah respon terhadap stimulasi oleh neuron lain. Mereka membuatnya dengan memanfaatkan tiga sumber : \textit{Knowledge of the basic physiology and function of neurons in the brain;} \textit{A formal analysis of propositional logic due to Russell and Whitehead}; dan \textit{Turing’s theory of computation}.
+\\
+\\
+Di tahun 1956, nama Artificial Intelligence pertama tercetus dari John McCarthy. McCarrthy menggaet Minsky, Claude Shannon, dan Nathaniel Rochester untuk membantunya bergabung dengan  peneliti U.S yang tertarik dalam teori automata, jaringan neuron, dan pembelajaran kecerdasan.  Mereka menyelenggarakan lokakarya yang berlangung dua bulan di Dartmouth, dalam proposalnya menyatakan : 
+“Kami mengusulkan bahwa studi kecerdasan buatan selama 2 bulan, 10 orang dilakukan keluar selama musim panas 1956 di Dartmouth College di Hanover, New Hampshire. Studi ini dilakukan atas dasar dugaan bahwa setiap aspek belajar atau fitur kecerdasan lainnya pada prinsipnya dapat ditentukan dengan sangat tepat. menjelaskan bahwa mesin dapat dibuat untuk mensimulasikannya. Upaya akan dilakukan untuk menemukan bagaimana membuat mesin menggunakan bahasa, membentuk abstraksi dan konsep, memecahkan jenis masalah sekarang disediakan untuk manusia, dan memperbaiki diri. Kami berpikir bahwa kemajuan yang signifikan dapat dibuat dalam satu atau lebih dari masalah ini jika hati-hati sekelompok ilmuwan terpilih mengerjakannya bersama selama musim panas.”
+John McCarty Mengusulkan definisi Kecerdasan Buatan “Merupakan cabang ilmu yang berfokus pada pengembangan komputer untuk dapat bertindak dan berperilaku layaknya manusia”.\cite{russell2009artificial}
+\\
+\subsection{Perkembangan Kecerdasan Buatan}
+Komputer pada awalnya hanya dapat mengelola data, lalu menghasilkan informasi untuk pengambilan keputusan. Seiring perkembangannya saat ini, komputer dapat mengolah pengetahuan sehingga proses pengambilan keputusan menjadi cepat. Bidang ini digunakan dalam pembuktian teorema dan permainan oleh Allen Newell, lalu Arthur Samuel menerapkan kecerdasan buatan pada permainan catur. Seiiring waktu, perkembangan kecerdasan buatan telah menghasilkan bidang turunan antara lain : Sistem pakar; Pengenalan Ucapan, Pengolahan Citra, Robotika, Neural Network, Fuzzy Logic, dsb.\cite{kb13vic}
+\\
+\subsection{Metode Pembelajaran}
+	Supervised learning merupakan metode yang bertujuan untuk memprediksi variabel target berdasarkan model hasil training menggunakan himpunan data berlabel. Biasanya dipergunakan dalam menyelesaikan masalah komputasi yang dikelompokan menjadi :Klasifikasi (proses pengelompokan berdasarkan ciri ciri yang sama);Regresi (prediksi hubungan antara variabel dependen dan variabel lainnya). Sedangkan unsupervised learning merupakan metode yang bertujuan untuk memprediksi variabel data tanpa adanya target data. Metode ini dipergunakan untuk menyelesaikan masalah secara : Klastering (pengelompokan data training ke dalam beberapa klaster berdasarkan kesamaannya).
+\subsection{Data}
+Dataset merupakan himpunan data yang berasal dari berbagai informasi dan dikelola menjadi informasi  untuk melakukan keputusan. Data ini akan terbagi menjadi dua jenis yakni : Training set(dataset yang kita latih untuk membuat prediksi pada sebuah algoritma) dan Test set (bagian dataset yang akan diuji untuk meninjau akurasi atau melihat performanya.
 
 \section{Instalasi}
 Membuka https://scikit-learn.org/stable/tutorial/basic/tutorial.html. Dengan menggunakan bahasa yang mudah dimengerti dan bebas plagiat. 
 Dan wajib skrinsut dari komputer sendiri.
 \begin{enumerate}
 \item
-Instalasi library scikit dari anaconda, mencoba kompilasi dan uji coba ambil contoh kode dan lihat variabel explorer[hari ke 1](10)
+Instalasi library scikit dari anaconda, mencoba kompilasi dan uji coba ambil contoh kode dan lihat variabel explorer\\
+\includegraphics{figures/kb_c1_g1.png}\\
 \item
 Mencoba Loading an example dataset, menjelaskan maksud dari tulisan tersebut dan mengartikan per baris[hari ke 1](10)
 \item
